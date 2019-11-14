@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <ToolBar/>
+    <v-content>
+       <v-row class="ma-2">
+        <v-flex md8>
+          <Painel/>
+        </v-flex>
+        <v-flex md4>
+          <FitaCaixa/>
+        </v-flex>
+       </v-row>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Painel from "./components/Painel";
+import ToolBar from "./components/ToolBar";
+import FitaCaixa from "./components/FitaCaixa";
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
-  }
-}
-</script>
+    Painel,
+    ToolBar,
+    FitaCaixa,
+  },
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>
