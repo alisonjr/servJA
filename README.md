@@ -5,11 +5,11 @@ Interface desenvolvida para dispositivos móveis (tablets).
 Estou utilizando Vue.js
 
 ## Escopo do projeto
-[x] Layout da interface
-[] Design dos cards
-[] Estados com Vuex
-[] Persistencia em banco de dados
-[] Testes
+- [x] Layout da interface
+- [ ] Design dos cards
+- [ ] Estados com Vuex
+- [ ] Persistencia em banco de dados
+- [ ] Testes
 
 
 ## Project setup
