@@ -4,8 +4,14 @@ image:
 # List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/43_config_ports/
 ports:
 - port: 3000
+- port: 8080
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
+vscode:
+  extensions:
+    - mhutchie.git-graph@1.19.1:8cFBP2fWTmrmLpT2ql8rPA==
+    - hollowtree.vue-snippets@0.1.11:6Eh/noAzUlIM2G8pAmdZqA==
+    - lukas-tr.materialdesignicons-intellisense@1.5.6:+0GV8DzKcjKMXoM7AApBog==

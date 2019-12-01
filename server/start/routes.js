@@ -17,8 +17,10 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { greeting: 'Hello world in JSON' }
+  return { greeting: 'oi, sistema em construcao' }
 })
+
+Route.get('/pdv', 'PdvController.index').middleware('auth');
 
 Route.post('auth/register', 'UserController.register');
 Route.post('auth/login', 'UserController.login');

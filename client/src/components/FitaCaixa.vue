@@ -1,40 +1,93 @@
 <template>
-  <v-card style="height: 100%" color="" >
-     <v-card-title>Resumo da Venda  </v-card-title>
-    <v-data-table 
-      style="max-width:100%"
-      hide-default-footer
-      :headers="headers"
-      :items="desserts"
-      class="elevation-1"
-    >
-
-      <template v-slot:item.action="{ item }">
-        <v-icon
-          small
-          class="mr-2"
-        >
-          mdi-pencil
-        </v-icon>
-        <v-icon
-          small
-        >
-          mdi-delete
-        </v-icon>
-      </template>
-
-    </v-data-table>
-
-    <v-btn 
-      large 
-      dark
-      color="green"
-      style="position: absolute; bottom:0; width: calc(100% - 24px)"
+  <v-card style="height: 100%; display: flex; flex-direction: column;"  >
+    <div 
       class="ma-3"
-    > 
-      FECHAR
-    </v-btn>
-
+      style=" height: 100%;
+              display: flex;
+              flex-direction: column;
+              border-radius: 5px;
+              overflow: hidden;"
+    >
+      <div style="flex: 1">
+        <v-card-title class="grey lighten-2">
+          <span>Resumo da Venda</span>
+          <v-spacer></v-spacer>
+          <v-icon>mdi-cart-outline</v-icon>
+        </v-card-title>
+        <v-row class="ma-0">
+          <v-col :md="7">
+            Produto
+          </v-col>
+          <v-col :md="2" class="text-center">
+            Qtd
+          </v-col>
+          <v-col :md="3" class="text-center">
+            Preço R$
+          </v-col>
+        </v-row>
+        <v-divider></v-divider>
+        <v-card-text class="pa-0" style="flex-grow: 1;"> 
+          <v-row class="ma-0">
+            <v-col :md="7">
+              nome do produto
+            </v-col>
+            <v-col :md="2" class="text-center">
+              3
+            </v-col>
+            <v-col :md="3" class="text-right">
+              12,00
+            </v-col>
+          </v-row>
+        <v-divider></v-divider>
+          <v-row class="ma-0">
+            <v-col :md="7">
+              nome do produto
+            </v-col>
+            <v-col :md="2" class="text-center">
+              150
+            </v-col>
+            <v-col :md="3" class="text-right">
+              150,00
+            </v-col>
+          </v-row>
+        <v-divider></v-divider>
+          <v-row class="ma-0">
+            <v-col :md="7">
+              nome do produto
+            </v-col>
+            <v-col :md="2" class="text-center">
+              30
+            </v-col>
+            <v-col :md="3" class="text-right">
+              5,00
+            </v-col>
+          </v-row>
+        </v-card-text>
+      </div>
+      <div style="width:100%;">
+        <v-row class="ma-0 grey lighten-2">
+          <v-col>
+            Total
+          </v-col>
+          <v-spacer></v-spacer>
+          <v-col class="text-right">
+            R$ 7.300,00
+          </v-col>
+        </v-row>
+      </div>
+    </div>
+    <div class="ma-3">
+      <v-btn 
+        x-large 
+        dark
+        tile
+        color="green"
+        block
+        class=""
+      > 
+        FECHAR
+      </v-btn>
+    </div>
   </v-card>
 </template>
 
@@ -81,6 +134,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+ 
 </style>
