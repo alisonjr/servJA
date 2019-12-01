@@ -1,41 +1,22 @@
 # servja
 POS system para pequenas conveniências. 
-Interface desenvolvida para dispositivos móveis (tablets).
+Interface desenvolvida para dispositivos móveis (tablets). Se você utilizar outro dispositivo, pode ser qeu fique um pouco desconfigurado.
 
-Estou utilizando Vue.js
+Estou utilizando Vue.js e o Adonis.js nesse projeto.
 
-## Escopo do projeto
-- [x] Layout da interface
-- [ ] Design dos cards
-- [ ] Estados com Vuex
-- [ ] Persistencia em banco de dados
+## Ainda falta algumas coisas, se quiser me ajudar...
+- [ ] Client
+    - [x] Layout da interface
+    - [ ] Design dos cards
+    - [ ] Estados com Vuex
+- [ ] Server back-end
+    - [X] autenticação
+    - [ ] Controllers
+    - [ ] models
+    - [ ] rotas
 - [ ] Testes
 
+Eu estou utilizando o gotpod para escrever. Loco mais eu coloco a url da aplicação rodando aqui.
 
-## Project setup
-```
-yarn install
-```
 
-####     Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-####     Compiles and minifies for production
-```
-yarn run build
-```
-
-####     Run your tests
-```
-yarn run test
-```
-
-####     Lints and fixes files
-```
-yarn run lint
-```
-
-#### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+:)
