@@ -114,6 +114,12 @@ export default new Vuex.Store({
           "nome":"Skol Long Neck",
           "info":"cx 6",
           "preco":22.5
+        },
+        {
+          "id": 19,
+          "nome":"Skol Long Neck",
+          "info":"cx 6",
+          "preco":22.5
         }
       ],
       vendas: [],
